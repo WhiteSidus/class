@@ -6,15 +6,15 @@ class Car:
         self.rok = rok
         self.model = model
         self.barva = barva
-        self.typ_revodovky = typ_prevodovky
+        self.typ_prevodovky = typ_prevodovky
         self.cena = cena
 
     def Vypis(self):
-        return f"Nazev auta: {self.znacka}, Rok výroby: {self.rok}"
+        return f"Nazev auta: {self.znacka};\nRok výroby: {self.rok};\nModel: {self.model};\nBarva: {self.barva};\nTyp prevodovky: {self.typ_prevodovky};\nCena: {self.cena}"
 
 audi = Car("Audi",1999, "A4", "Stříbrna", "Manuální", 45000)
 skoda = Car("Škoda", 2014, "Superb II", "Bíla", "Manuální", 310000)
 
-print(audi.rok)
-print(skoda.model)
+# print(audi.rok)
+# print(skoda.model)
 print(audi.Vypis())
