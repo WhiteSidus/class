@@ -23,7 +23,7 @@ class Car:
         return f"Nazev auta: {self.znacka} \nCena bez DPH: {(self.cena * 0.79)}"
 
 """"
-audi = Car("Audi",1999, "A4", "Stříbrna", "Manuální", 45000)
+audi = Car("Audi",1999, "A4", "Stříbrna", "Manuální", 45000) # instance = vytvoření objektu
 skoda = Car("Škoda", 2014, "Superb II", "Bíla", "Manuální", 310000)
 """
 
@@ -33,16 +33,17 @@ seznam_aut = [
     Car("Škoda", 2014, "Superb II", "Bíla", "Manuální", 310000)
 ]
 
-# print(audi.rok)
-# print(skoda.model)
-# print(audi.Vypis())
-# print(skoda.cena_bez_dph())
-
-# print("---------------")
-# print(seznam_aut[0].znacka)
-# print("---------------")
-
 """
+print(audi.rok)
+print(skoda.model)
+print(audi.Vypis())
+print(skoda.cena_bez_dph())
+
+print("---------------")
+print(seznam_aut[0].znacka)
+print("---------------")
+
+
 for i in range (len(seznam_aut)):
     print(seznam_aut[i].Vypis())
     print("----------------")
